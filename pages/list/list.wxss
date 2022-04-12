@@ -1,0 +1,166 @@
+.title{
+    position: absolute;
+    top:30px;
+    left:45px;
+    color: white;
+    font-size: 16.5px;
+    font-weight: 550;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.home{
+    position: absolute;
+    top: 27px;
+    left: 12px;
+    width: 25px;
+    height: 25px;
+    border: solid 1px white;
+    border-radius: 50%;
+}
+.touxiang{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 20px;
+}
+.username{
+    position:absolute;
+    margin-top: 18px;
+    margin-left: 80px;
+    font-size: 17px;
+    color: #303133;
+}
+.getTel{
+    position: absolute;
+    width:30px;
+    height: 30px;
+    margin-left: 180px;
+    margin-top: 15px;
+    border-radius: 40px;
+    color: white;
+    background-color: #7fdaa9;
+
+   
+    
+}
+
+.back{
+    background-image: linear-gradient(45deg, #d4d9e4 0%, #98ddb8 100%);
+    height: 190px;
+    
+}
+.userInfo{
+    background-color: white;
+    height: 60px;
+    width:80%;
+    margin-left: 10%;
+    border-radius: 100px;
+    margin-top: 15px;
+    box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.3);
+    display: flex;
+    
+
+}
+.body{
+    position:absolute;
+    background-color: #F5F5F5;
+    height: 600px;
+    width: 380px;
+ 
+}
+.body-text{
+    position: absolute;
+    color: #303133;
+    margin-top: 30px;
+    margin-left: -90px;
+    text-indent: 1.8em;
+    /* text-indent是用来设定文本块中第一行的缩进。所有浏览器都支持 text-indent 属性。 */
+}
+.body-image{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.body-top{
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    background-color: white;
+    margin-left: 0%;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    /* //该属性设置超出时自动换行 */
+}
+.body-item{
+    width: 160px;
+    height: 115px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(45deg, #edf1fa 0%, #dbf5e8 100%);
+    text-align: center;
+}
+.cancer-check{
+    width: 90%;
+    height: 100px;
+    background-image: linear-gradient(45deg, #edf1fa 0%, #caebda 100%);
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.history{
+    width: 90%;
+    height: 100px;
+    background-image: linear-gradient(45deg, #edf1fa 0%, #caebda 100%);
+    margin-left: 5%;
+    text-align: center;
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.scrolltxt{
+    width: 65%;
+    margin-left: 23%;
+    margin-top: 20%;
+    height: 30px;
+    border-radius: 10px;
+    
+    text-align: center;
+    color: snow;
+    
+  }
+  .marquee_box {
+    position:relative;
+    color:white;
+    height:90rpx;
+    display:block;overflow:hidden;
+  } 
+  .marquee_text {
+    white-space: nowrap;
+    position:absolute;
+    top: 5px;
+    font-size:15px;
+    
+    height:90rpx;
+    
+  
+  }
+  /* 轮播图css */
+.carousel{
+    background-color: white;
+    margin-top: 83%;
+    width: 100%;
+    
+}
+
+.slide-image{
+    height: 100%;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 10px;
+}

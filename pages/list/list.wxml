@@ -1,0 +1,58 @@
+<!--pages/list/list.wxml-->
+
+
+<view class="back">
+    <image src="/image/home.png" class="home"></image>
+    <view class ="title"><text>癌症检测</text></view>
+    <scroll-view>
+    <image src="/image/喇叭.png" 
+    style="position:absolute;width: 30px;height: 30px;margin-left: 40px;"></image>
+  <view class="scrolltxt">
+    <view class="marquee_box">
+      <view class="marquee_text" style="transform: translateX(-{{marqueeDistance}}px)">
+      <text>{{text}}</text>
+      <text style="margin-right:{{marquee_margin}}px;"></text>
+      <text style="margin-right:{{marquee_margin}}px;">{{text}}</text>  
+      </view>
+    </view>
+  </view>
+  <!--用户信息-->
+  <view class="userInfo">
+    <image class="touxiang" src="/image/doctor1.jpg"></image>
+    <text class="username">微信用户</text>
+    <button class="getTel" size="mini">获取手机号</button>
+  </view>
+</scroll-view>
+
+</view>
+<!-- 放置图标 -->
+
+<view class="body">
+    <image src="/image/doctor.png" style="position: absolute;width: 30px;height: 30px;margin-left: 110px;margin-top: -2px;"></image>
+    <text  style="position: absolute;margin-left: 150px;color: #303133;margin-top: 3px;">您的健康医生</text>
+    <view class="body-top">
+        <view class="body-item" bindtap="jump">
+        <text class="body-text">前往癌症\n检测</text><image class="body-image" src="/image/疾病.png"></image></view>
+        <view class="body-item"><text class="body-text">历史检测\n记录</text>
+            <image class="body-image" src="/image/历史记录.png"></image></view>
+        <view class="body-item"><text class="body-text">个人健康\n监测</text>
+            <image class="body-image" src="/image/监测.png"></image></view>
+        <view class="body-item"><text class="body-text">癌症知识\n普及</text>
+            <image class="body-image" src="/image/疾病百科.png"></image></view>
+    </view>
+<!--底部轮播图-->
+<view class="carousel">
+    <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" 
+    interval="{{interval}}" duration="{{duration}}" class="swiper">
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+            <image src="{{item}}" class="slide-image"></image>
+        </swiper-item>
+    
+    </block>
+    
+    </swiper>
+
+</view>
+</view>
+

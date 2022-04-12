@@ -1,0 +1,22 @@
+{
+    "pages": [
+        "pages/list/list",
+        "pages/index/index",
+        "pages/cancer_check/cancerCheck"
+    ],
+    "plugins": {
+        "paddlejs-plugin": {
+            "version": "2.0.1",
+            "provider": "wx7138a7bb793608c3"
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarTitleText": "癌症检测-您的健康管家",
+        "navigationStyle": "custom"
+        
+        
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}

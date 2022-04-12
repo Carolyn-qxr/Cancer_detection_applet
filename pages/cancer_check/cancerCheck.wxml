@@ -1,0 +1,11 @@
+<!--pages/cancer_check/cancerCheck.wxml-->
+
+<view class="check">
+    <view>
+   <button bindtap="upload">请上传病理图</button>
+
+<canvas canvas-id="myCanvas" style="width: {{canvasWidth}}px;height: {{canvasHeight}}px;"></canvas>
+<button bindtap="toHome">Home</button>
+</view>
+<image src="/image/doctor.png" style="background-repeat: no-repeat;"></image>
+</view>
