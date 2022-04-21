@@ -1,0 +1,2 @@
+# Cancer_detection_applet
+这是一个癌症检测小程序，通过PaddlePaddle训练模型，并使用PaddleJS部署到微信小程序，面向所有人提供癌症检测服务
