@@ -1,0 +1,30 @@
+<!--pages/report.wxml-->
+<view class="title">
+<image class="back" src="{{backSrc}}" bindtap="before"></image>
+<text class="title-text">癌症检测服务</text>
+</view>
+<view class="body">
+    <image class="doctor" src="doctorSrc"></image>
+    <text class="text-top">您的健康医生</text>
+<view class="report">
+    <view class="shuxian"> </view>
+    <text class="report-text">病理检测报告</text>
+    <view class="line"></view>
+    <view class="userInfo">
+        <text class="text">姓名：<text style="margin-left: 15px;">{{username}}</text></text>
+        <text class="text">身份证：<text>{{userID}}</text></text>
+        <text class="text">手机号：<text>{{userTel}}</text></text>
+    </view>
+    <view class="line2"></view>
+    <view class="bingli">
+        <text class="bing-text">病理图：</text>
+        <image class="bingli-image" src="{{imgUrl}}"></image>
+    </view>
+    <view class="line3"></view>
+    <text class="result-title">检测结果：</text>
+    <text class="result">{{result}}</text>
+</view>
+<image src="" class="author"></image>
+<text class="author-text">by qxr</text>
+</view>
+

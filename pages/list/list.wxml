@@ -1,13 +1,10 @@
 <!--pages/list/list.wxml-->
-
-
 <view class="back">
-    <image src="/image/home.png" class="home"></image>
-    <view class ="title"><text>癌症检测</text></view>
+    <!-- <image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/home.png?sign=5494fef9a8dc9095e6c47f812ca9e271&t=1650353122" class="home"></image> -->
+    <view class ="title"><text>癌症检测助手</text></view>
     <scroll-view>
-    <image src="/image/喇叭.png" 
-    style="position:absolute;width: 30px;height: 30px;margin-left: 40px;"></image>
-  <view class="scrolltxt">
+    <image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E5%96%87%E5%8F%AD.png?sign=1befb5bf663aaea45b526d9196b1273f&t=1650354380" style="position:absolute;width: 30px;height: 30px;left: 15px"></image>
+    <view class="scrolltxt">
     <view class="marquee_box">
       <view class="marquee_text" style="transform: translateX(-{{marqueeDistance}}px)">
       <text>{{text}}</text>
@@ -18,7 +15,7 @@
   </view>
   <!--用户信息-->
   <view class="userInfo">
-    <image class="touxiang" src="/image/doctor1.jpg"></image>
+    <image class="touxiang" src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/doctor1.jpg?sign=88bbfb06367c2c50495db45f5ac0915a&t=1650353144"></image>
     <text class="username">微信用户</text>
     <button class="getTel" size="mini">获取手机号</button>
   </view>
@@ -28,31 +25,28 @@
 <!-- 放置图标 -->
 
 <view class="body">
-    <image src="/image/doctor.png" style="position: absolute;width: 30px;height: 30px;margin-left: 110px;margin-top: -2px;"></image>
+    <image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E5%81%A5%E5%BA%B7.png?sign=2121559ae55f6b2bd8693755028a4614&t=1650425336" style="position: absolute;width: 25px;height: 25px;margin-left: 118px;margin-top: 2.5px;"></image>
     <text  style="position: absolute;margin-left: 150px;color: #303133;margin-top: 3px;">您的健康医生</text>
     <view class="body-top">
         <view class="body-item" bindtap="jump">
-        <text class="body-text">前往癌症\n检测</text><image class="body-image" src="/image/疾病.png"></image></view>
+        <text class="body-text">前往癌症\n检测</text><image class="body-image" src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E7%96%BE%E7%97%85.png?sign=9c30c4a51a71ac8f16c9dee745573078&t=1650353201"></image></view>
         <view class="body-item"><text class="body-text">历史检测\n记录</text>
-            <image class="body-image" src="/image/历史记录.png"></image></view>
+            <image class="body-image" src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E5%8E%86%E5%8F%B2%E8%AE%B0%E5%BD%95.png?sign=7b83aac9219f7a0e808462bc765482f0&t=1650353267"></image></view>
         <view class="body-item"><text class="body-text">个人健康\n监测</text>
-            <image class="body-image" src="/image/监测.png"></image></view>
+            <image class="body-image" src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E7%9B%91%E6%B5%8B.png?sign=40dd1549c499a000f2772d06f9efcc81&t=1650353291"></image></view>
         <view class="body-item"><text class="body-text">癌症知识\n普及</text>
-            <image class="body-image" src="/image/疾病百科.png"></image></view>
+            <image class="body-image" src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E7%96%BE%E7%97%85%E7%99%BE%E7%A7%91.png?sign=67217434acd1d4c500008fb32086fc7b&t=1650353217"></image></view>
     </view>
 <!--底部轮播图-->
 <view class="carousel">
     <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" 
     interval="{{interval}}" duration="{{duration}}" class="swiper">
-    <block wx:for="{{imgUrls}}">
-        <swiper-item>
+    <swiper-item wx:for="{{imgUrls}}" >
             <image src="{{item}}" class="slide-image"></image>
-        </swiper-item>
-    
-    </block>
-    
+    </swiper-item>
     </swiper>
 
 </view>
 </view>
-
+<image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E7%BC%96%E8%BE%91.png?sign=7a1493a72b7d8921d508fe647061f7fc&t=1650376376" class="author"></image>
+<text class="author-text">by qxr</text>

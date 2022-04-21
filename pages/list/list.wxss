@@ -1,7 +1,11 @@
+.back{
+    background-image: linear-gradient(45deg, #d4d9e4 0%, #98ddb8 100%);
+    height: 240px;
+}
 .title{
     position: absolute;
-    top:30px;
-    left:45px;
+    top:46px;
+    left:20px;
     color: white;
     font-size: 16.5px;
     font-weight: 550;
@@ -9,10 +13,10 @@
 }
 .home{
     position: absolute;
-    top: 27px;
-    left: 12px;
-    width: 25px;
-    height: 25px;
+    top: 43px;
+    left: 28px;
+    width: 22px;
+    height: 22px;
     border: solid 1px white;
     border-radius: 50%;
 }
@@ -34,26 +38,17 @@
     position: absolute;
     width:30px;
     height: 30px;
-    margin-left: 180px;
+    margin-left: 200px;
     margin-top: 15px;
     border-radius: 40px;
     color: white;
     background-color: #7fdaa9;
-
-   
-    
-}
-
-.back{
-    background-image: linear-gradient(45deg, #d4d9e4 0%, #98ddb8 100%);
-    height: 190px;
-    
 }
 .userInfo{
     background-color: white;
     height: 60px;
-    width:80%;
-    margin-left: 10%;
+    width:90%;
+    margin-left: 5%;
     border-radius: 100px;
     margin-top: 15px;
     box-shadow: 0px 1px 3px rgba(34, 25, 25, 0.3);
@@ -73,7 +68,7 @@
     color: #303133;
     margin-top: 30px;
     margin-left: -90px;
-    text-indent: 1.8em;
+    text-indent: 2em;
     /* text-indent是用来设定文本块中第一行的缩进。所有浏览器都支持 text-indent 属性。 */
 }
 .body-image{
@@ -86,10 +81,10 @@
 
 .body-top{
     position: absolute;
-    width: 100%;
-    height: 270px;
+    width: 90%;
+    height: 280px;
     background-color: white;
-    margin-left: 0%;
+    margin-left: 2.5%;
     margin-top: 30px;
     border-radius: 5px;
     display: flex;
@@ -98,11 +93,11 @@
 }
 .body-item{
     width: 160px;
-    height: 115px;
-    margin-left: 20px;
-    margin-top: 10px;
+    height: 130px;
+    margin-left: 7px;
+    margin-top: 5px;
     border-radius: 10px;
-    background-image: linear-gradient(45deg, #edf1fa 0%, #dbf5e8 100%);
+    background-image: linear-gradient(45deg, #e3e8f3 0%, #bff1d7 100%);
     text-align: center;
 }
 .cancer-check{
@@ -124,12 +119,11 @@
     border-radius: 10px;
 }
 .scrolltxt{
-    width: 65%;
-    margin-left: 23%;
-    margin-top: 20%;
+    width: 77%;
+    margin-left: 15%;
+    margin-top: 27%;
     height: 30px;
     border-radius: 10px;
-    
     text-align: center;
     color: snow;
     
@@ -153,14 +147,35 @@
   /* 轮播图css */
 .carousel{
     background-color: white;
-    margin-top: 83%;
-    width: 100%;
+    margin-top: 85%;
+    width: 90%;
+    margin-left: 2.5%;
+    height: 190px;
+    border-radius: 10px;
     
 }
-
-.slide-image{
-    height: 100%;
+.swiper{
+    position: absolute;
     width: 90%;
-    margin-left: 5%;
+    height: 60%;
+}
+.slide-image{
+    height: 190px;
+    width: 100%;
     border-radius: 10px;
+}
+.author{
+    position: absolute;
+    margin-top: 145%;
+    margin-left: 140px;
+    width: 20px;
+    height: 20px;
+}
+
+.author-text{
+    position: absolute;
+    margin-top: 145%;
+    margin-left: 170px;
+    font-style: italic;
+    color: #303133;
 }

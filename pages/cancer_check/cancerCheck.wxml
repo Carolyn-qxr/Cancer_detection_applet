@@ -1,11 +1,48 @@
 <!--pages/cancer_check/cancerCheck.wxml-->
-
-<view class="check">
-    <view>
-   <button bindtap="upload">请上传病理图</button>
-
-<canvas canvas-id="myCanvas" style="width: {{canvasWidth}}px;height: {{canvasHeight}}px;"></canvas>
-<button bindtap="toHome">Home</button>
+<view class="title">
+    <image src="{{homeSrc}}" class="home" bindtap="toHome"></image>
+<text class="title-text">癌症检测服务</text>
 </view>
-<image src="/image/doctor.png" style="background-repeat: no-repeat;"></image>
+
+<view class="body">
+    <image class="doctor" src="{{doctorSrc}}"></image>
+    <text class="text">您的健康医生</text>
+    <view class="userInfo">
+        <view class="vertical"></view>
+        <text class="text-register">个人信息登记</text>
+        <view class="line"></view>
+        <view class="info-container">
+        <view class="info">
+            <image class="info-icon1" src="{{nameSrc}}"></image> 
+            <text class="info-text1">姓名</text>
+            <input value="{{username}}" bindinput="addName" placeholder="请输入姓名" style="position: absolute;right: 20px;top: 64px;width: 100px;text-align: right;" ></input>
+        </view>  
+        <view class="info">
+            <image class="info-icon2" src="{{IDSrc}}"></image>
+            <text class="info-text2">身份证</text>
+            <input value="{{userID}}" bindinput="addID" placeholder="请填写身份证号" style="position: absolute;right: 20px;top: 110px;width: 170px;text-align: right;"></input>
+    
+        </view>  
+        <view class="info">
+            <image class="info-icon3" src="{{telSrc}}"></image>
+            <text class="info-text3">电话</text>
+            <input value="{{userTel}}" bindinput="addTel" placeholder="请填写电话号码" style="position: absolute;right: 20px;top: 160px;width: 170px;text-align: right;"></input>
+        </view>  
+    </view>
 </view>
+<view class="handle">
+    <button type="primary" class="upload" bindtap="upload" size="mini" plain="true">上传病理图</button>
+    <button type="primary" class="submit" size="mini" plain="true" bindtap="submit">提交检测</button>
+</view>
+</view>
+
+
+ <!-- 图像显示 -->
+ <canvas   class="canvas" canvas-id="myCanvas" style='width:{{canvasWidth}}px; height:{{canvasHeight}}px' ></canvas>
+ <!-- 对话框 -->
+
+ <image src="https://6361-cancer-dr-4g6jr373fb3798e0-1310829361.tcb.qcloud.la/%E7%BC%96%E8%BE%91.png?sign=7a1493a72b7d8921d508fe647061f7fc&t=1650376376" class="author"></image>
+<text class="author-text">by qxr</text>
+ 
+
+ 

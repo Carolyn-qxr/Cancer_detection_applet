@@ -1,8 +1,11 @@
 {
     "pages": [
         "pages/list/list",
-        "pages/index/index",
-        "pages/cancer_check/cancerCheck"
+        "pages/cancer_check/cancerCheck",
+        "pages/report/report",
+        "pages/selfDetect/selfDect",
+        "pages/encyclopedia/encyclopedia",
+        "pages/history/history"
     ],
     "plugins": {
         "paddlejs-plugin": {
@@ -12,11 +15,9 @@
     },
     "window": {
         "backgroundTextStyle": "light",
-        "navigationBarTitleText": "癌症检测-您的健康管家",
         "navigationStyle": "custom"
-        
-        
     },
     "style": "v2",
-    "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
 }
